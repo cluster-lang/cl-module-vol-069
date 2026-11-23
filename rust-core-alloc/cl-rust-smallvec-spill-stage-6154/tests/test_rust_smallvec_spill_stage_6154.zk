@@ -1,0 +1,10 @@
+// cl-rust-smallvec-spill-stage-6154: Test Suite
+import "../rsv_6154.zk"
+
+fn test_run():
+    res := smallvec_spill_6154(5, 4)
+    if not res: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-rust-smallvec-spill-stage-6154!")

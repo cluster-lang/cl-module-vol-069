@@ -1,0 +1,6 @@
+// cl-rust-smallvec-spill-stage-6355
+// Contributor: zk-mohammad <ZaidKhan-alamgir@proton.me>
+// CCFL v2.0 Terms with copyright stewardship managed by Mohammad Zaid/cluster
+
+fn smallvec_spill_6355(len_val: int, inline_cap: int) -> bool:
+    return (len_val + 3) > inline_cap

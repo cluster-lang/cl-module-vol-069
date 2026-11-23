@@ -1,0 +1,10 @@
+// cl-rust-smallvec-spill-stage-3900: Test Suite
+import "../rsv_3900.zk"
+
+fn test_run():
+    res := smallvec_spill_3900(5, 4)
+    if not res: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-rust-smallvec-spill-stage-3900!")
